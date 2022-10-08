@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz Çevir</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="row row-input">
+            <div class="col-md-12 input-column">
+                <div class="input-group">
+                    <input type="text" class="input-area" id="input-area" placeholder="TL Miktarını Girin">
+                    <span class="input-group-text">₺</span>
+                    <button class="btn btn-primary" type="submit" id="calculate-button">Hesapla</button>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row row-currency" id="row-usd">
+            <div class="col-md-12 card-column">
+                <div class="card card-usd" id="card-usd">
+                    <div class="row info-row text-center">
+                        <div class="col-3 icon-column">
+                            <i class="fa-solid fa-dollar-sign dollar" id="icon-dollar"></i>
+                        </div>
+                        <div class="col-6 currency-column">
+                            <span class="result" id="dollar-result"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-currency" id="row-eur">
+            <div class="col-md-12 card-column">
+                <div class="card card-3">
+                    <div class="row info-row text-center">
+                        <div class="col-3 icon-column">
+                            <i class="fa-solid fa-euro-sign euro"></i>
+                        </div>
+                        <div class="col-6 currency-column">
+                            <span class="result" id="eur-result"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-curency" id="row-gbp">
+            <div class="col-md-12 card-column">
+                <div class="card card-4">
+                    <div class="row info-row text-center">
+                        <div class="col-3 icon-column">
+                            <i class="fa-solid fa-sterling-sign sterlin"></i>
+                        </div>
+                        <div class="col-6 currency-column">
+                            <span class="result" id="gbp-result"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="main.js"></script>
+    <script src="api.js"></script>
+    
+</body>
+</html>

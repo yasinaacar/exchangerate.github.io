@@ -1,0 +1,53 @@
+
+.input-group{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.input-area{
+    border: 1px solid #ced4da;
+    width: 400px;
+    border-radius: 8px;
+
+}
+
+.card{
+    width: 600px;
+    height: 60px !important;
+    background-color: #EEEEEE !important;
+}
+
+.card-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-row{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row-currency{
+    margin-bottom: 30px;
+}
+
+#row-try{
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+
+    .input-group input{
+
+        width: 200px;
+    }
+    
+}
